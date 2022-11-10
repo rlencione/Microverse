@@ -43,7 +43,7 @@ juice('laranja', 'maçã', 'pera');
 juice('laranja', 'pera');
 ______________________________________________________________
 
-Level #3 Return functions output (video #21)*/
+Level #3 Return functions output (video #21)
 
 function ret(k, f){
   return k * f;
@@ -53,9 +53,33 @@ let moreresult = ret(20, 10) + ret(10, 10);
 
 console.log(result);
 console.log(moreresult);
+_____________________________________________________________
 
+Level #3 Reverse and translate arrays (video #23)
 
+function reverse(arr){
+  let output = [];
+  for(let i = arr.length -1; i >= 0; i--){
+    output.push(arr[i]);
+}
+    return output;
+}
 
+let result = reverse([1,2,3,4,5,6,9,7,8]);
+console.log(result);
 
+function binary(ary){
+  let output = [];
+   for(let i = 0; i < ary.length; i++){
+     if(ary[1] === 1){
+       output.push('one');
+     }
+     if(ary[i] === 0){
+       output.push('zero');
+    }
+   } 
+   return output
+}
 
-
+let ring = binary([0,1,1,0,0,1]);
+console.log(ring);*/

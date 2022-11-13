@@ -82,4 +82,64 @@ function binary(ary){
 }
 
 let ring = binary([0,1,1,0,0,1]);
-console.log(ring);*/
+console.log(ring);
+______________________________________________________________
+
+Level #4 Reserse string (video #09)
+
+function reverse(str){
+  let concat =[];
+  let back ="";
+  //for(let i = str.length -1; i >= 0; i --){
+  let i = str.length;
+    while(i >= 0){
+    i--;
+    back += str[i]
+    }
+ return back; 
+
+}  
+let result = reverse("consulta");
+console.log(result);
+_____________________________________________________________
+
+Level #4 Factorialize a number (video #13)*/
+
+function factorialize(num){
+ let calc = 1;
+ for (let i = 2; i <= num; i++){
+  calc *= i;
+ }
+  console.log(calc);
+}
+factorialize(5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

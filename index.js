@@ -103,16 +103,18 @@ let result = reverse("consulta");
 console.log(result);
 _____________________________________________________________
 
-Level #4 Factorialize a number (video #13)*/
+Level #4 Factorialize a number (video #13)
 
 function factorialize(num){
  let calc = 1;
- for (let i = 2; i <= num; i++){
+ for (let i = 1; i <= num; i++){
   calc *= i;
  }
   console.log(calc);
 }
-factorialize(5);
+factorialize(20);
+-------------------------------------------------------------
+Level #4 truncate a string (video #17)*/
 
 
 

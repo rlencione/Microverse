@@ -17,4 +17,27 @@ function sumAll(arr) {
 }
 
 let result = sumAll([5, 10]);
-console.log(result);*/
+console.log(result);
+______________________________________________________________________
+Level 4 Seek and destroy (Video 31)*/
+
+function destroy(arr){
+  let input = arguments[0];
+  let output = [];
+  let destroyer = [];
+
+  
+  for(let i = 0; i < arguments.length; i++){
+    destroyer.push(arguments[i]);
+     
+  }
+  console.log(destroyer);
+  for(let i = 0; i < input.length; i++){
+    if(destroyer.includes (input[i]) === false){
+        output.push()
+    } 
+  }
+  return arr;
+}
+
+destroy([1,2,3,1,2,3], 2,3,5,5,2);

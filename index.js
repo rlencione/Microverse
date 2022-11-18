@@ -1,80 +1,20 @@
-/*Level #4 Where do I belong (Video 21)
+/*Level 4 Sum all numbers in a range (Video 27)
 
-function getIndexToIns(arr, num) {
-  let blong = 0;
-      for(let i = 0; i < arr.length; i++){
-      if(arr[i] < num ){
-        blong ++;
-      console.log(blong);
-      }
-      }
-  return blong;
+function sumAll(arr) {
+  let menor = arr[0];
+  let maior = arr[1];
+  let sol = 0;
+  
+  if(menor > maior){
+  menor = arr[1];
+  maior = arr[0];
+  }   
+  
+  for (let i = menor; i <= maior; i ++){
+    sol += i;
+  }
+  return sol;
 }
 
-getIndexToIns([40, 60], 50);
-___________________________________________________________
-Level #4 splits array (Video 24)
-
-function chunkArrayInGroups(arr, size) {
-  let spl = [];
-  let min = [];
-  let max = 0;
-  for(let i = 0; i < arr.length; i++){
-    if(max === 0);{
-    max = 0;
-    min = [];
-  }
-    min.push(arr[i]);
-    console.log(max, min);
-    max ++;
-  }
-return arr;
-}
-
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
-
-function chunk(arr, size){
-  let spl = [];
-  let max = [];
-  let min = 0;
-  for (let i = 0; i < arr.length; i++){
-    if(min === size){
-      min = 0;
-      spl.push(max);
-      max = [];
-    }
-    max.push(arr[i])
-      
-      min ++;
-  }
-  spl.push(max);
-  console.log(spl);
-  return arr;
-}
-
-chunk(["a", "b", "c", "d", "e", "f", "g", "h", "i"], 3);*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let result = sumAll([5, 10]);
+console.log(result);*/

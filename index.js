@@ -19,25 +19,56 @@ function sumAll(arr) {
 let result = sumAll([5, 10]);
 console.log(result);
 ______________________________________________________________________
-Level 4 Seek and destroy (Video 31)*/
-
+Level 4 Seek and destroy (Video 31)
 function destroy(arr){
   let input = arguments[0];
   let output = [];
   let destroyer = [];
 
   
-  for(let i = 0; i < arguments.length; i++){
+  for(let i = 1; i < arguments.length; i++){
     destroyer.push(arguments[i]);
      
   }
-  console.log(destroyer);
+ //console.log(destroyer);
+  
   for(let i = 0; i < input.length; i++){
     if(destroyer.includes (input[i]) === false){
-        output.push()
+        output.push(input[i]);
+      
     } 
+  console.log(destroyer);
+    console.log(input[i]);
   }
-  return arr;
+  return output;
 }
 
-destroy([1,2,3,1,2,3], 2,3,5,5,2);
+let causo = destroy([1,2,3,8, 9, 1,2,3], 2,3,5,5,2);
+console.log(causo);
+_______________________________________________________________
+Level 4 Pig Latin Hint (Video 36)
+
+function translatePig(str){
+  let cons =["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","x","y","z"];
+  let vog = ["a","e","i","o","u"];
+  let wrd = str.split([""]);
+  
+  for(let i = 0; i < str.length; i++){
+    
+  }
+  console.log(wrd.length);
+  return str;
+}
+
+translatePig("sardinha");*/
+
+
+
+
+
+
+
+
+
+
+

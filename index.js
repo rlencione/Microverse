@@ -60,7 +60,60 @@ function translatePig(str){
   return str;
 }
 
-translatePig("sardinha");*/
+translatePig("sardinha");
+__________________________________________________________________________
+Level level6 day 1 video 3
+
+function getSecondLargest(nums){
+  let size = nums.length;
+  let sec = nums[0];
+  for(let i = 0; i < size; i++){
+    if(nums[i] > sec)
+      sec = nums[i]; 
+  }
+  let secMin = nums[0];
+  for(let i = 0; i < size; i++){
+    if(nums[i] > secMin && nums[i] < sec)
+      secMin = nums[i];
+  }
+  return secMin;
+}
+
+
+let result = getSecondLargest([2,3,6,6,5]);
+console.log(result);
+_____________________________________________________________________
+Level level6 day 1 video 4*/
+
+let cons=["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","x","y","z"];
+  let vog = ["a","e","i","o","u"];
+  
+
+function vowelsAndConsonants(s){
+  let vowel = "";
+  let con = "";
+  let wrd = s.split([""]);
+  for(let i = 0; i < wrd.length; i++){
+  if(vog.includes(wrd[i])){
+    vowel = (wrd[i]);
+    console.log(vowel);
+  }if(cons.includes(wrd[i])){
+    con = (wrd[i]);
+    console.log(con);
+    }
+   
+  }
+  
+  return vowel;
+}
+
+let letter = vowelsAndConsonants("javascriptloops");
+//console.log(letter);
+
+
+
+
+
 
 
 

@@ -123,9 +123,21 @@ function main() {
 ___________________________________________________________
 Level level6 day 2 video 1*/
   
+function birthdayCakeCandles(candles) {
+    let velas = candles [0];
+  for(i = 0; i < candles.length; i++){
+    if(candles[i] > velas){
+      velas = candles[i];
+     
+    }
+    
+  }
+  
+  return velas;
+}
 
-
-
+let birthday = birthdayCakeCandles([3, 2, 1, 3]);
+console.log(birthday);
 
 
 

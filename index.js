@@ -104,10 +104,25 @@ function vowelsAndConsonants(s){
 }
 let letter = vowelsAndConsonants("javascriptloops");
 _____________________________________________________________
-Level level6 day 1 video 5*/
-
-
-
+Level level6 day 1 video 5
+function main() {
+    var t = parseInt(readLine());
+    for(var a0 = 0; a0 < t; a0++){
+        var n = parseInt(readLine());
+     
+      let lift = 0;
+        for(i = 1; i < n; i++){
+          if(i % 3 == 0 || i % 5 == 0){
+          lift += i;
+        
+      }
+      } 
+      console.log(lift);
+}
+}
+___________________________________________________________
+Level level6 day 2 video 1*/
+  
 
 
 
